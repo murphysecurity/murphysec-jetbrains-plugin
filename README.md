@@ -15,8 +15,9 @@
 ### 支持功能
 
 目前 Murphysec Code Scan 支持的功能如下：
-- 检测代码中引入的缺陷组件
-- 查看缺陷组件的安全漏洞信息
+- 漏洞检测：检测 `Java(Maven)`、`JavaScript(npm)`、`Go(gomod)`、`Python(pip)` 代码中引入的缺陷组件
+- 一键修复：不仅有清晰的修复方案，还可以通过此功能快速修复
+- 实时检测：代码的依赖发生变化导致了安全问题，不用担心，插件会及时给您提醒进行处理
 
 
 > 注意
@@ -55,9 +56,26 @@
 ### 查看扫描结果
 - 扫描完成后会在窗口内显示结果，可以点击左侧漏洞查看详细信息
 
-![plugin-result](./screenshot/plugin-result.png)
+![plugin-result](./screenshot/plugin-result.png) 
+
+### 修复
+
+- 点击检测结果中的组件，即可查看该缺陷组件的基本信息
+- 点击右侧“一键修复”，即可直接将该组件升级至“最小修复版本
+
+点击下方的`一键修复`按钮，即可直接将该组件升级至最小修复版本
+
+![plugin-quick-fix](./screenshot/plugin-quick-fix.png) 
 
 ### 重新扫描
 - 点击插件左侧选项栏中的`绿色开始图标`，即可重新扫描
 
 ![plugin-restart](./screenshot/plugin-restart.png)
+
+
+## 常见问题
+
+### 1. 将插件从 sidebar 移除了，我要怎么检测？
+
+- 点击菜单栏上的 `View` -> `Tool Windows` -> `MurphySec` ，插件将会重新出现在 sidebar 上
+![plugin-sidebar](./screenshot/plugin-sidebar-murphysec.jpeg)
